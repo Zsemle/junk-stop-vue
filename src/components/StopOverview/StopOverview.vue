@@ -10,19 +10,21 @@
 import Vue from 'vue';
 import json from '../../mocks/driver_route_sample.json';
 import CurrentStop from '../CurrentStop/CurrentStop.vue';
-import { Stop, DriverRoute } from '../../types/index';
+import { Stop } from '../../types/index';
 
 export default Vue.extend({
   name: 'StopOverview',
   components: {
     CurrentStop,
   },
+  data() {
+    return {
+      stops: json.stops,
+    };
+  },
   computed: {
-    driverRoute(): DriverRoute {
-      return json;
-    },
     currentStop(): Stop {
-      return this.driverRoute.stops[0];
+      return this.stops[3];
     },
   },
 });

@@ -4,6 +4,7 @@
     <ul>
       <li v-for="stopOrder in stopOrders" :key="stopOrder.order_id">
         <StopOrder
+          v-on:orderDone=updateOrder
           :orderDetails=stopOrder
         />
       </li>
@@ -24,7 +25,11 @@ export default Vue.extend({
   props: {
     stopOrders: Array as () => Array<Order>,
   },
-
+  methods: {
+    updateOrder() {
+      console.log('SENT');
+    },
+  },
 });
 </script>
 
