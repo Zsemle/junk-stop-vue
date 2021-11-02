@@ -1,5 +1,7 @@
 # junk-stop-vue
 
+You'll need vue-cli to run this project.
+
 ## Project setup
 ```
 npm install
