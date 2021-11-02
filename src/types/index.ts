@@ -32,7 +32,7 @@ export interface Stop {
   eta:string | null,
   time_start: string | null,
   time_end: string | null,
-  orders: Array<Order> | null,
+  orders: Array<Order>,
 }
 
 export interface DriverRoute {

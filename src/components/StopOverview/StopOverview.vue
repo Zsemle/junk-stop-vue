@@ -1,16 +1,28 @@
 <template>
-  <div class="stop-overview"></div>
+  <div class="stop-overview">
+    <CurrentStop
+      :stop=currentStop
+    />
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import json from '../../mocks/driver_route_sample.json';
+import CurrentStop from '../CurrentStop/CurrentStop.vue';
+import { Stop, DriverRoute } from '../../types/index';
 
 export default Vue.extend({
   name: 'StopOverview',
+  components: {
+    CurrentStop,
+  },
   computed: {
-    driverRoute() {
+    driverRoute(): DriverRoute {
       return json;
+    },
+    currentStop(): Stop {
+      return this.driverRoute.stops[0];
     },
   },
 });
