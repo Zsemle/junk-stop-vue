@@ -24,7 +24,12 @@ export default Vue.extend({
   },
   computed: {
     currentStop(): Stop {
-      return this.stops[3];
+      return this.stops.find((stop) => stop.status !== 4) || this.stops[this.stops.length - 1];
+    },
+  },
+  methods: {
+    completeCurrentStop() {
+      console.log('complete current stop sent to api');
     },
   },
 });
