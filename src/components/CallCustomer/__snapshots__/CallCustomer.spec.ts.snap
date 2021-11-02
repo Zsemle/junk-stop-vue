@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppFrame.vue renders call link if phone number is available 1`] = `<div class="call-customer"><a title="Call the customer" href="tel:0612345678">Call customer</a></div>`;
+
+exports[`AppFrame.vue renders plain text if phone number is not available 1`] = `<div class="call-customer"><span>phone number unavailable</span></div>`;

@@ -6,6 +6,9 @@
       <p>Street: {{address.street}}</p>
       <p>Town: {{address.town}}</p>
       <p>Postal code: {{address.postal_code}}</p>
+      <CallCustomer
+        :phoneNumber=stop.telephone
+      />
     </div>
     <div>
       <StopOrders
@@ -20,6 +23,7 @@
 import Vue from 'vue';
 import { Stop, Address, Order } from '../../types/index';
 import StopOrders from '../StopOrders/StopOrders.vue';
+import CallCustomer from '../CallCustomer/CallCustomer.vue';
 
 export default Vue.extend({
   name: 'CurrentStop',
@@ -28,6 +32,7 @@ export default Vue.extend({
   },
   components: {
     StopOrders,
+    CallCustomer,
   },
   computed: {
     address(): Address {
