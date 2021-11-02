@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppFrame.vue renders without errors 1`] = `
+<div class="app-frame">
+  <theheader-stub></theheader-stub>
+  <div>
+    <stopoverview-stub></stopoverview-stub>
+  </div>
+  <thefooter-stub></thefooter-stub>
+</div>
+`;
