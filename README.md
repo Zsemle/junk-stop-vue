@@ -1,31 +1,8 @@
-# junk-stop-vue
+# Purpose
+This was a project for a job interview and might be used later in discussions.
 
-You'll need vue-cli to run this project.
+## Technology
+- Vue.js
+- Typescript
+- Vue test utils
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
